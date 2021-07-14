@@ -1,0 +1,254 @@
+/* fonts */
+*{
+  padding: 0;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+ }
+ /* ---------- Section- 01 Starting ---------- */
+ .section-01{
+  background: #2D25A0;
+  padding-top: 20px;
+  padding-bottom: 50px;
+ }
+ .main-menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-end;
+  margin-right: 50px;
+ }
+ .menu{
+  margin-top: 40px;
+ }
+ .menu ul {
+  padding-left: 100px;
+ }
+ .menu ul li{
+  list-style: none;
+  display: inline-block;
+  margin-right: 35px;
+ }
+ .menu ul li a{
+  text-decoration: none;
+  color: #FFFFFF;
+  font-size: 16px;
+ }
+ .login-button a{
+  margin-left: 8px;
+ }
+ button{
+  padding: 10px 30px;
+  background: #E02C6D;
+  color: #FFFFFF;
+  border: none;
+ 
+ }
+ .login-button-01 a{
+  text-decoration: none;
+  color: #FFFFFF;
+  font-weight: 400;
+  font-size: 16px;
+ 
+ }
+ .section-items {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin-left: 2%;
+  margin-right: 2.5%;
+ }
+ .section-title {
+  width: 35%;
+  margin-top: 120px;
+ }
+ .section-title h1{
+  font-weight: bold;
+  font-size: 64px;
+  color: #FFFFFF;
+  margin-bottom: 50px;
+ }
+ button{
+  padding: 10px 40px;
+  background: #E02C6D;
+  color: #FFFFFF;
+  border: none;
+ }
+ 
+ .watch-button a{
+  text-decoration: none;
+  color: #FFFFFF;
+  font-weight: 400;
+  font-size: 16px;
+  margin-right: 5px;
+ }
+ .section-banner{
+  width: 35%;
+  margin-top: 70px;
+  margin-bottom: 85px;
+ }
+ .section-banner img{
+  width: 125%;
+  transition: 1.5s
+ }
+ .section-information :hover img{ 
+   transform: scale(120%)
+ }
+ /* ---------- Section- 01 Ending ---------- */
+ /* ---------- Section- 02 Starting ---------- */
+ .section-02{
+  margin-top: 40px;
+ }
+ .players-info{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 20px;
+  grid-row-gap: 30px;
+  margin-left: 180px;
+  margin-right: 200px;
+ 
+ }
+ .players-list{
+  box-shadow: -1px 2px 8px -1px rgba(0,0,0,1);
+  padding: 10px 20px 20px 20px
+ }
+ .players-list img{
+  width: 100%;
+ }
+ .players-list h1{
+  margin-top: 10px;
+  font-weight: bold;
+  font-size: 20px;
+  color: #18191F;
+ }
+ .players-list p{
+  margin-top: 10px;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  color: #6C6C6C;
+ }
+ /* ---------- Section- 02 Ending ---------- */
+ /* ---------- Section- 03 Starting ---------- */
+ .section-03 {
+  margin-top: 9%;
+ }
+ .watch-highlights {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-left: 5%;
+  margin-right: 10%;
+ }
+ .watch-info{
+  width: 30%;
+ }
+ .watch-info h1 {
+  font-size: 33px;
+  line-height: 55px;
+  margin-bottom: 5%;
+ }
+ .watch-info p {
+  font-size: 18px;
+  line-height: 24px;
+  color: #6C6C6C;
+  margin-bottom: 5%;
+ }
+ .watch-highlights-image{
+  width: 30%;
+ }
+ .watch-highlights-image img{
+  width: 120%;
+ }
+ /* ---------- Section- 03 Ending ---------- */
+ /* section 04 start */
+ .section04{
+   margin-top: 5%;
+ }
+ .teams-list{
+   display: flex;
+ }
+ /* .teams{
+   font-size: medium;
+   color:#18191F;
+ } */
+ .teams-list img{
+   width: 50%;
+  margin-left: 20%;
+  margin-bottom: 20%;
+ }
+ .teams h1{
+   font-size: 40px;
+   font-weight: 700;
+   color:#173562;
+ }
+ /* ------------section 04 end -------------*/
+
+ /* ---------- Footer Section Starting ---------- */
+.footer-items{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ }
+ .logo{
+   margin-left: 22%;
+   margin-top: 5%;
+ }
+ .logo img{
+  width: 50%;
+ }
+ .fab{
+   padding: 10px 10px;
+   background-color: #969BAB;
+   border-radius: 50%;
+   color: #18191F;
+   font-size: 20px;
+   margin-right: 20px;
+ }
+ .footer-media{
+   margin-bottom:2%
+ }
+ .copyright p{
+   font-size: 18px;
+   font-weight: 700;
+
+ }
+
+ /*----------- Footer Section Ending ---------- */
+
+ /*------------------- media quary -------------*/
+ /* ----------- iPhone X ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+      .section-01,
+      .section-02,
+      .section-03, 
+      .section-04,
+      .footer-section 
+      {
+          width: 100%;
+      }
+      .section-items, 
+      .main-menu,
+      .watch-highlights,
+      .match-results, .footer-items{
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          align-content: center;
+          
+      }
+      .players-info
+          {
+              display: grid;
+              grid-template-columns: repeat(1, 1fr);
+          }
+          
+      
+
+}
