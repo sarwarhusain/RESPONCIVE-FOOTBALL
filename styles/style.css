@@ -6,6 +6,8 @@
  }
  /* ---------- Section- 01 Starting ---------- */
  .section-01{
+   width: 1349px;
+   height: 623.98px;
   background: #2D25A0;
   padding-top: 20px;
   padding-bottom: 50px;
@@ -97,7 +99,9 @@
  /* ---------- Section- 01 Ending ---------- */
  /* ---------- Section- 02 Starting ---------- */
  .section-02{
-  margin-top: 40px;
+   width: 1349px;
+   height: 2590.44px;
+   margin-top: 40px;
  }
  .players-info{
   display: grid;
@@ -118,7 +122,7 @@
  .players-list h1{
   margin-top: 10px;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 10px;
   color: #18191F;
  }
  .players-list p{
@@ -218,37 +222,35 @@
  /*----------- Footer Section Ending ---------- */
 
  /*------------------- media quary -------------*/
- /* ----------- iPhone X ----------- */
-
-/* Portrait and Landscape */
-@media only screen 
-  and (min-device-width: 320px) 
-  and (max-device-width: 480px)
-  and (-webkit-min-device-pixel-ratio: 2) {
-      .section-01,
-      .section-02,
-      .section-03, 
-      .section-04,
-      .footer-section 
-      {
-          width: 100%;
-      }
-      .section-items, 
-      .main-menu,
-      .watch-highlights,
-      .match-results, .footer-items{
-          display: flex;
-          flex-direction: column;
-          align-items: flex-start;
-          align-content: center;
-          
-      }
-      .players-info
-          {
-              display: grid;
-              grid-template-columns: repeat(1, 1fr);
-          }
-          
-      
-
+ @media only screen and (max-width:688px) {
+  .section-01,
+  .section-02{
+      width: 100%;
+      height: 100%;
+  }
+  .section-items{
+      display: flex;
+  flex-direction: column;
+  margin-left: 2%;
+  margin-right: 2.5%;
+  align-items: flex-start;
+  }
+  .players-info{
+      grid-template-columns: repeat(1, 1fr);
+      grid-column-gap: 5px;
+      grid-row-gap: 5px;
+      margin-left: 2px;
+      margin-right:2px;
+  }
+  .players-list{
+      grid-template-areas: none;
+  }
+  .main-menu{
+      display: none;
+  }
+  .section-banner img{
+      width: 250%;
+  }
+  
 }
+ 
